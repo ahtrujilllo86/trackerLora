@@ -86,11 +86,11 @@ function initMap() {
 
 function mqtt() {
     // Create a client instance
-    const client = new Paho.MQTT.Client('wss://broker.emqx.io', 8084, "localizador" + new Date());
+    const client = new Paho.MQTT.Client('broker.emqx.io', 8084, "localizador" + new Date());
     // set callback handlers
     client.onConnectionLost = onConnectionLost;
     client.onMessageArrived = onMessageArrived;
-    client.connect({onSuccess:onConnect});
+    client.connect({onSuccess:onConnect, useSSL: true});
     // called when the client connects
     function onConnect() {
       console.log("ok...");
