@@ -1,0 +1,14 @@
+#map {
+  height: 100vh;
+  width: 100vw;
+  /* -webkit-box-shadow: 10px 0px 5px 0px rgba(158,152,158,0.87);
+  -moz-box-shadow: 10px 0px 5px 0px rgba(158,152,158,0.87);
+  box-shadow: 10px 0px 5px 0px rgba(158,152,158,0.87); */
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
